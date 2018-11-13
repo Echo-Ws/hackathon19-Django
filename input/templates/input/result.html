@@ -1,0 +1,25 @@
+
+<table id="alternatecolor" class="altrowstable">
+
+<tr>
+    <th>Order</th>
+    <th>Url</th>
+    <th>Tag</th>
+    <th>Score</th>
+
+
+</tr>
+
+
+
+{% for result in result_list %}
+    <tr text-align="center">
+        {% for item in result %}
+       <td>{{ item }}</td>
+
+        {% endfor %}
+    </tr>
+
+{% endfor %}
+
+</table>
